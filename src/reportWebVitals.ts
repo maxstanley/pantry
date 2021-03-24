@@ -1,6 +1,6 @@
 import { ReportHandler } from "web-vitals";
 
-export default (onPerfEntry?: ReportHandler): void => {
+export default function reportWebVitals(onPerfEntry?: ReportHandler): void {
 	if (onPerfEntry && onPerfEntry instanceof Function) {
 		import("web-vitals").then(({
 			getCLS, getFID, getFCP, getLCP, getTTFB,
